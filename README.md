@@ -80,24 +80,27 @@ Install with:
 pip install numpy==2.0.1 pandas==2.2.2 scikit-learn==1.5.1 xgboost==2.1.1 scipy==1.13.1 torch tqdm
 ```
 ---
-How to Run
+## How to Run
+
 Place the competition data files in `/content/`:
-`dataset_info.json`
-`train.pkl`
-`x_test.pkl`
-`y_test_local.pkl`
+- `dataset_info.json`
+- `train.pkl`
+- `x_test.pkl`
+- `y_test_local.pkl`
+
 Open and run `9th_place_modtest.ipynb` end-to-end. The notebook is organized into clearly numbered sections:
-Libraries
-File loading & data extraction
-Windowing functions (overlapping / non-overlapping)
-Utility functions (prediction extraction, preprocessing, submission formatting)
-Preprocessing & target creation
-Train / validation / holdout split
-Row-wise MinMax scaling
-Feature engineering
-Final dataset preparation
-XGBoost model training
-Inference & metric evaluation
+
+1. Libraries
+2. File loading & data extraction
+3. Windowing functions (overlapping / non-overlapping)
+4. Utility functions (prediction extraction, preprocessing, submission formatting)
+5. Preprocessing & target creation
+6. Train / validation / holdout split
+7. Row-wise MinMax scaling
+8. Feature engineering
+9. Final dataset preparation
+10. XGBoost model training
+11. Inference & metric evaluation
 ---
 Results
 Final leaderboard position: 9th place 🎉
