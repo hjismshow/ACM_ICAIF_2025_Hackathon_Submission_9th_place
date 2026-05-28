@@ -4,13 +4,16 @@
 > Forecasting the next 10 minutes of closing prices across 100 cryptocurrencies using engineered features and XGBoost.
 ---
 Competition Overview
-The goal was to develop robust short-horizon forecasting models for cryptocurrency markets that explicitly incorporate heterogeneous information sources. 
+The goal was to develop robust short-horizon forecasting models for cryptocurrency markets that explicitly incorporate heterogeneous information sources.
 Participants were challenged to forecast the next 10 minutes of closing prices for 100 tokens, given the preceding 60 minutes of close and volume data.
-Task: Given 60-minute sequences of closing prices and trading volumes, predict the next 10-minute price trajectory.
-Formally:
-Input: `(X_i, Z_i)` — 60-minute close and volume sequences per asset
-Output: `Y_i = [p_{t+1}, ..., p_{t+10}]` — next 10 closing prices
-Evaluation: Statistical accuracy + simulated trading performance
+
+**Task:** Given 60-minute sequences of closing prices and trading volumes, predict the next 10-minute price trajectory.
+
+**Formally:**
+
+- **Input:** `(X_i, Z_i)` — 60-minute close and volume sequences per asset
+- **Output:** `Y_i = [p_{t+1}, ..., p_{t+10}]` — next 10 closing prices
+- **Evaluation:** Statistical accuracy + simulated trading performance
 ---
 Approach
 Pipeline Summary
